@@ -1,0 +1,28 @@
+{
+  "name": "react-app-rewire-typescript-hmr",
+  "version": "0.0.1",
+  "description": "Injects HMR to Create React App Typescript project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Arelav/react-app-rewire-typescript-hmr.git"
+  },
+  "keywords": [
+    "React",
+    "Create",
+    "React",
+    "App",
+    "HMR",
+    "Webpack",
+    "Typescript"
+  ],
+  "author": "Valery Kharshats",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arelav/react-app-rewire-typescript-hmr/issues"
+  },
+  "homepage": "https://github.com/Arelav/react-app-rewire-typescript-hmr#readme"
+}
