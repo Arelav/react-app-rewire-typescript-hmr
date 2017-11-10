@@ -20,7 +20,7 @@ const getTsLoader = function(rules) {
   return getLoader(rules, tsLoaderMatcher);
 };
 
-module.exports = (config, useBabel = false, babelPlugins = ['react-hot-loader/babel']) => {
+module.exports = (config, useBabel = false, babelPlugins = []) => {
   const tsLoader = getTsLoader(config.module.rules);
   if (!tsLoader) {
     console.log('ts-loader not found');
@@ -37,7 +37,7 @@ module.exports = (config, useBabel = false, babelPlugins = ['react-hot-loader/ba
         // It enables caching results in ./node_modules/.cache/babel-loader/
         // directory for faster rebuilds.
         cacheDirectory: true,
-        plugins: babelPlugins
+        plugins: ['react-hot-loader/babel', ...babelPlugins]
       }
     }]
   } else {

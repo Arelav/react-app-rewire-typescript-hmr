@@ -1,6 +1,6 @@
 {
   "name": "react-app-rewire-typescript-hmr",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Injects HMR to Create React App Typescript project",
   "main": "index.js",
   "scripts": {
