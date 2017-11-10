@@ -15,7 +15,7 @@ npm install babel-loader --save-dev
 ```
 
 Change your index.tsx looks like
-```
+```Javascript
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
@@ -42,7 +42,7 @@ registerServiceWorker();
 ```
 
 And create new file named `config-overrides.js` to start using react-app-rewired
-```
+```Javascript
 const overrideTsLoader = require('react-app-rewire-typescript-hmr')
 
 module.exports = function override(config, env) {
@@ -54,7 +54,7 @@ module.exports = function override(config, env) {
 If you want to use Babel pass true as second parameter of overrideTsLoader
 
 Also you can pass array of babel loaders. For example to use Emotion call:
-```
+```Javascript
 overrideTsLoader(config, true, [["emotion", { "sourceMap": true }]])
 ```
 
